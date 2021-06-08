@@ -29,6 +29,8 @@ public class Usuario {
 	@Size(min = 7)
 	private String senha;
 	
+	private boolean admin;
+	
 	
 	//getters and setters
 
@@ -62,6 +64,14 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public boolean isAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
 	}
 	
 	

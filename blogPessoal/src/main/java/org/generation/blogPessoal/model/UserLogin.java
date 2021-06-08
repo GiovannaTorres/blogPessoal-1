@@ -10,6 +10,8 @@ public class UserLogin {
 	
 	private String token;
 	
+	private boolean admin;
+	
 	
 	
 	//getters and setters
@@ -45,6 +47,16 @@ public class UserLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+	public boolean isAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
+	
+	
 
 	
 	
