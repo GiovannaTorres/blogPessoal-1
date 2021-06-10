@@ -25,12 +25,19 @@ public class Usuario {
 	@Size(min = 2, max = 100)
 	private String usuario;
 	
-	@NotNull
-	@Size(min = 7)
+	@NotNull(message="É NECESSÁRIO SENHA")
 	private String senha;
 	
 	private boolean admin;
 	
+	//construtores
+	public Usuario() {	
+	}
+
+	public Usuario(@NotNull String usuario, @NotNull String senha) {
+		this.usuario = usuario;
+		this.senha = senha;
+	}
 	
 	//getters and setters
 
